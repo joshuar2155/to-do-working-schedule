@@ -69,3 +69,16 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.rows {
+  background-color: antiquewhite;
+}
+
+.col-10 {
+  background-color: white;
+}
+
+.hour{
+  display: flex;
+align-items: flex-start;
+}
