@@ -10,6 +10,7 @@
 
 
 //attempt at current time
+var currentDay = $("#currentDay");
 var datetime = null,
         date = null;
 var update = function () {
@@ -23,4 +24,14 @@ $(document).ready(function(){
     setInterval(update, 1000);
 });
 
+//attempt at formulating local storage
+localStorage.setItem(key, value);
 
+$('col-10').text(localStorage.getItem('col-10'));
+
+
+//attempt at for loop for rows and eventual color transistions
+
+var rows = "rows"
+
+for (var i = 0; i < rows.length; i++);
