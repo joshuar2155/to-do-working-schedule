@@ -11,17 +11,14 @@ This project is to create a working to-do list with functions that keep track in
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Usage is to set different plans for a schedule and save them at different dates.
+!
+    ![This is a screenshot of the website](assets/images/website3.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
-Credit is due to
+Credit is due to Lucs Rozon, Freddy Kwak, Tabitha Salmon, Juliana Lamond, and Sean Dillon, as they are all members of my study group.
 
 ## License
 

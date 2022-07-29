@@ -1,22 +1,26 @@
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-    // moment.js
-    var timeDisplayEl = $('#time-display');
 
-    function displayTime() {
-        var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
-        timeDisplayEl.text(rightNow);
-      }   
-// WHEN I scroll down
-// THEN I am presented with timeblocks for standard business hours
-// WHEN I view the timeblocks for that day
-// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-// WHEN I click into a timeblock
-// THEN I can enter an event
-// WHEN I click the save button for that timeblock
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
+  //attempt at a save button
+  $(".saveBtn").click(function (event) {
+    event.preventDefault();
+    var time = $(this).parent().attr('class').split('-')[1];
+    var value = $(this).siblings(".timeblock").val();
+    localStorage.setItem(time, value);
+  });
 
-setInterval(displayTime, 1000);
+
+
+//attempt at current time
+var datetime = null,
+        date = null;
+var update = function () {
+    date = moment(new Date())
+    datetime.html(date.format('dddd, MMMM Do YYYY, h:mm:ss a'));
+};
+
+$(document).ready(function(){
+    datetime = $('#currentDay');
+    update();
+    setInterval(update, 1000);
+});
+
+
