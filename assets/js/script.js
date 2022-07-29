@@ -9,7 +9,7 @@
 
 
 
-//attempt at current time
+//attempt at current time (very scrambled)
 var currentDay = $("#currentDay");
 var datetime = null,
         date = null;
